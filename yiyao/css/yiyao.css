@@ -1,0 +1,466 @@
+@charset "utf-8";
+/*去除边框*/
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+select,
+textarea,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+/*列表去点*/
+ul,
+ol,
+li{
+	list-style: none;
+}
+/*文本框去默认*/
+input,
+select,
+textarea {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+/*多行文本去样式*/
+textarea {
+	resize: none;
+}
+/*图片对齐方式*/
+img {
+	vertical-align: top;
+}
+/*超链接去默认*/
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+/*取消浏览器最小字体限制*/
+html {
+	-webkit-text-size-adjust: none;
+}
+ /*清除浮动*/
+ .clearfix:after,
+ .clearfix:before {
+ 	content: "";
+ 	display: table;
+ }
+ 
+ .clearfix:after {
+ 	clear: both;
+ }
+ 
+ .clearfix {
+ 	*zoom: 1;
+ }
+/* 右浮动*/
+ .fr {
+ 	float: right;
+ }
+/* 左浮动*/
+ .fl {
+ 	float: left;
+ }
+ /*公共宽高*/
+ 
+ .comWidth {
+ 	width: 1200px;
+ 	margin: 0 auto;
+ }
+ body{
+ 	background: #F0F0F0;
+ }
+.header{
+	height: 14.25rem;
+}
+ .Carousel{
+ 	position: absolute;
+ }
+ .Carousel img{
+ 	width: 32rem;
+ 	height: 14.25rem;
+ }
+ .spot{
+ 	position: absolute;
+ 	top: 90%;
+ 	left: 77%;
+ }
+ .spot li{
+ 	float: left;
+ 	width: 0.5rem;
+ 	height: 0.5rem;
+ 	margin-left: 0.16rem;
+ 	border-radius: 50%;
+ 	border: 0.1rem solid #fff;
+ }
+.head{	
+ 	width: 32rem;
+ 	height: 4.5rem;	
+ 	position: absolute;
+ 	z-index: 1;
+ 	padding: 0.75rem 0;
+ 	background: -webkit-linear-gradient(rgba(0,7,23,1),rgba(255,255,255,0));
+ } 
+ .head li{
+ 	float: left;
+ 	margin-left: 1.35rem;
+ 	color: #FFFFFF;
+ }
+ .gou{
+ 	width: 2.3rem;
+ 	height: 2.1rem;
+ 	margin-top: -0.4rem;
+ }
+ .head li p img{
+ 	width: 1.95rem;
+ 	height: 1.55rem;
+ }
+ .head li input{
+ 	padding-left:1.2rem ;
+ 	height: 3rem;
+ 	font-size: 1.35rem;
+ 	line-height: 3rem;
+ 	padding-right: 5.5rem;
+ 	color: #ADADAD;
+ 	background: url(../images/fangda.png) #FFFFFF no-repeat center right;
+ 	background-size: 3.2rem 1.7rem;
+    border-radius: 0.25rem;
+ }
+ .Shopping{
+ 	padding-top: 0.5rem;
+ }
+ .head li span{
+ 	display: inline-block;
+ 	height: 1.45rem;
+ 	line-height: 1.45rem;
+ 	font-size: 1rem;
+ }
+ .classification{
+ 	margin: 1rem 0.5rem;
+ 	width: 31rem;
+ 	height: 16.5rem;
+ 	background-color: #fff;
+ 	box-shadow:-0.1rem 0 0.1rem #DADADA,0.1rem 0 0.1rem #DADADA,0 0.1rem 0.15rem #DADADA;
+ }
+ .classification ul li{
+ 	font-size: 0.7rem;
+ 	float: left;
+ 	margin: 1.15rem 1.55rem 0 1.05rem;
+ }
+ .classification ul li img{
+ 	 width: 5rem;
+     height: 5rem;
+ }
+ .classification ul li span{
+ 	display: inline-block;
+ 	width: 5rem;
+ 	height: 1.7rem;
+ 	text-align: center;
+ 	line-height: 1.7rem;
+ }
+font{
+ 	display: block;
+ 	color: #FF4000;
+ 	font-size: 1.25rem;
+ 	margin-top: 0.8rem;
+ 	margin-left:0.3rem;
+ }
+ .product{
+ 	font-size: 1.1rem;
+ 	width: 31rem;
+ 	height: 17.15rem;
+ 	border-top: 1px solid #DADADA;
+ }
+ .product span{
+ 	margin-left:0.6rem;
+ }
+ .Drugs{
+ 	margin: 1rem 0.5rem;
+ 	width: 31rem;
+ 	height: 20.5rem;
+ 	background-color: #fff;
+ 	box-shadow:-0.1rem 0 0.1rem #DADADA,0.1rem 0 0.1rem #DADADA,0 0.1rem 0.15rem #DADADA;
+ }
+ .Drugs .top{
+ 	height: 3.2rem;
+ 	font-size: 1.2rem;
+ 	line-height: 3.2rem;
+ 	color: #8F8F8F;
+ }
+ .Drugs .top img{
+ 	width: 0.3rem;
+ 	height: 1.2rem;
+ 	margin: 1rem 0.7rem 1rem 0.7rem;
+ }
+ .Drugs .big{
+ 	margin-top: 0.1rem;
+ 	width: 15.35rem;
+ 	height: 17.05rem;
+ 	border-right: 1px solid #DADADA;
+ }
+ .Drugs .big div{
+ 	margin-left:1.9rem ;
+ }
+ .Drugs .big p{
+ 	margin-top: 2.4rem;
+ }
+ .Drugs .big img{
+ 	margin-top: 1.4rem;
+ 	margin-left:0.5rem;
+ 	width: 11.8rem;
+ 	height: 8.25rem;
+ }
+ .Drugs .bor{
+ 	border-top: 1px solid #DADADA;
+ }
+ .Drugs .der div{
+ 	margin-top: 1.3rem;
+ 	float: left;
+ }
+ .Drugs .bor div{
+ 	margin-top: 1.3rem;
+ 	margin-right: 2.1rem;
+ 	float: right;
+ }
+ .Drugs .der img{
+ 	margin-top: 0.35rem;
+ 	width: 7.65rem;
+ 	height: 8.15rem;
+  	float: right;
+  }
+ .Drugs .bor img{
+ 	margin-top: 0.7rem;
+  	width: 7rem;
+ 	height: 7.5rem;
+  	float: left;
+  }
+ .Drugs ul li{
+ 	margin-top: 0.1rem;
+ 	margin-left: 0.1rem;
+ 	width: 15.45rem;
+ 	height: 8.4rem;
+ }
+ .Advertisement{
+ 	margin: 1rem 0.5rem;
+ }
+ .Advertisement img{
+ 	width: 31rem;
+ 	height: 5rem;
+ }
+ .Wine{
+ 	margin: 1rem 0.5rem;
+ 	width: 31rem;
+ 	height: 20.5rem;
+ 	background-color: #fff;
+ 	box-shadow:-0.1rem 0 0.1rem #DADADA,0.1rem 0 0.1rem #DADADA,0 0.1rem 0.15rem #DADADA;
+ }
+.Wine .top{
+ 	height: 3.2rem;
+ 	font-size: 1.2rem;
+ 	line-height: 3.2rem;
+ 	color: #8F8F8F;
+ }
+ .Wine .top img{
+ 	width: 0.3rem;
+ 	height: 1.2rem;
+ 	margin: 1rem 0.7rem 1rem 0.7rem;
+ }
+ .Wine .big{
+ 	margin-top: 0.1rem;
+ 	width: 15.35rem;
+ 	height: 17.05rem;
+ 	border-left: 1px solid #DADADA;
+ }
+ .Wine .big div{
+ 	margin-left:1.9rem ;
+ }
+ .Wine .big p{
+ 	margin-top: 1.75rem;
+ }
+ .Wine .big img{
+ 	margin-left:0.5rem;
+ 	width: 10.65rem;
+ 	height: 11.5rem;
+ }
+ .Wine .bor{
+ 	border-top: 1px solid #DADADA;
+ }
+ .Wine .der div{
+ 	margin-top: 1.3rem;
+ 	float: left;
+ }
+ .Wine .bor div{
+ 	margin-top: 1.3rem;
+ 	margin-right: 2.1rem;
+ 	float: right;
+ }
+ .Wine .der img{
+ 	float: right;
+ 	width: 8.4rem;
+ 	height: 8.4rem;
+  }
+ .Wine .bor img{
+ 	margin-top: 0.4rem;
+  	width: 4.8rem;
+ 	height:7.7rem;
+  	float: left;
+  }
+ .Wine ul li{
+ 	margin-top: 0.1rem;
+ 	margin-right: 0.1rem;
+ 	width: 15.45rem;
+ 	height: 8.4rem;
+ }
+  .Maintenance{
+ 	margin: 1rem 0.5rem;
+ 	width: 31rem;
+ 	height: 20.5rem;
+ 	background-color: #fff;
+ 	box-shadow:-0.1rem 0 0.1rem #DADADA,0.1rem 0 0.1rem #DADADA,0 0.1rem 0.15rem #DADADA;
+ }
+ .Maintenance .top{
+ 	height: 3.2rem;
+ 	font-size: 1.2rem;
+ 	line-height: 3.2rem;
+ 	color: #8F8F8F;
+ }
+ .Maintenance .top img{
+ 	width: 0.3rem;
+ 	height: 1.2rem;
+ 	margin: 1rem 0.7rem 1rem 0.7rem;
+ }
+ .Maintenance .big{
+ 	margin-top: 0.1rem;
+ 	width: 15.35rem;
+ 	height: 17.05rem;
+ 	border-right: 1px solid #DADADA;
+ }
+ .Maintenance .big div{
+ 	margin-left:1.9rem ;
+ }
+ .Maintenance .big p{
+ 	margin-top: 1.65rem;
+ }
+ .Maintenance .big img{
+ 	margin-top: 1.4rem;
+ 	margin-left:2.85rem;
+ 	width: 10.2rem;
+ 	height: 10.2rem;
+ }
+ .Maintenance .bor{
+ 	border-top: 1px solid #DADADA;
+ }
+ .Maintenance .der div{
+ 	margin-top: 0.8rem;
+ 	float: left;
+ }
+ .Maintenance .der a{
+ 	display:block;
+ 	height: 1.25rem;
+ 	width: 4rem;
+ 	margin-left: 0.5rem;
+ }
+  .Maintenance .der font{
+  	margin-top: 2rem;
+  }
+ .Maintenance .bor div{
+ 	margin-top: 1.3rem;
+ 	margin-right: 1.5rem;
+ 	float: right;
+ }
+ .Maintenance .der img{
+ 	width: 7.4rem;
+ 	height: 6.25rem;
+  	float: right;
+  }
+ .Maintenance .bor img{
+ 	margin-top: 0.7rem;
+ 	margin-left: 0.75rem;
+  	width: 7rem;
+ 	height: 7.5rem;
+  	float: left;
+  }
+ .Maintenance ul li{
+ 	margin-top: 0.1rem;
+ 	margin-left: 0.1rem;
+ 	width: 15.45rem;
+ 	height: 8.4rem;
+ }
+ .user{
+ 	width: 31rem;
+ 	height: 1rem;
+ 	margin: 0.5rem 0.5rem;
+ 	font-size: 0.7rem;
+ 	color: #2A8BE0;
+ }
+ .return{
+ 	height: 1rem;
+ 	width: 2.7rem;
+ 	padding-right: 0.55rem;
+ 	background: url(../images/fan.fw.png) no-repeat right center;
+ 	background-size: 0.55rem 0.45rem;
+ }
+ .bottom{
+ 	width: 32rem;
+ 	height: 5.95rem;
+ 	background-color: #1771D2;
+ 	font-size: 0.7rem;
+ }
+ .bottom ul li{
+ 	height: 2.15rem;
+    line-height: 2.15rem;
+    text-align: center;
+ 	color: #BAE9FF;
+ }
+ .bottom ul li a{
+ 	font-size: 0.6rem;
+ 	color: #BAE9FF;
+ }
+ .bottom ul li a:hover{
+ 	color: #fff;
+ }
+ .bottom ul li ul{
+ 	margin-left: 9.05rem;
+ }
+ .bottom ul li ul li{
+ 	text-align: left;
+ 	float: left;
+ 	width: 5rem;
+ }
+ .zhong{
+ 	background-color: #2A8ADE;
+ }
+ .b1{
+ 	margin-top: 0.7rem;
+ 	margin-right: 0.45rem;
+ 	width: 0.9rem;
+ 	height: 0.9rem;
+ }
+ .b2{
+ 	margin-top: 0.7rem;
+ 	margin-right: 0.25rem;
+ 	width: 1.1rem;
+ 	height: 0.9rem;
+ }
+ .b3{
+ 	margin-top: 0.7rem;
+ 	margin-right: 0.45rem;
+ 	width: 0.9rem;
+ 	height: 0.9rem;
+ }
+ .bottom p{
+ 	height: 1.65rem;
+ 	line-height: 1.65rem;
+ 	text-align: center;
+ 	color: #FFFF99;
+ }

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>医药</title>
+	<link rel="stylesheet" type="text/css" href="css/yiyao.css"/>
+</head>
+<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 32 + 'px':_html.style.fontSize = view_width / 32 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+</script>
+<body>   
+	<div class="header">
+		<div class="Carousel">
+			<img src="images/banner.png" />
+			<ul class="spot">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<ul class="head">
+			<li>
+				<p><img  src="images/caidan.png" /></p>
+				<span>分类</span>
+			</li>
+			<li>
+				<input type="text" name="" id="" value="&nbsp&nbsp输入搜索关键字" />
+			</li>
+			<li class="Shopping">
+				<img class="gou" src="images/gouwu.png" />
+			</li>
+		</ul>
+	</div>
+	<div class="classification">
+		<ul>
+			<li>
+				<p><img src="images/1.png" alt="" /></p>
+				<span>中西药</span>
+			</li>
+			<li>
+				<p><img src="images/2.png" alt="" /></p>
+				<span>儿科用药</span>
+			</li>
+			<li>
+				<p><img src="images/3.png" alt="" /></p>
+				<span>皮肤用药</span>
+			</li>
+			<li>
+				<p><img src="images/4.png" alt="" /></p>
+				<span>机械用药</span>
+			</li>
+			<li>
+				<p><img src="images/5.png" alt="" /></p>
+				<span>养生保健</span>
+			</li>
+			<li>
+				<p><img src="images/6.png" alt="" /></p>
+				<span>隐形眼镜</span>
+			</li>
+			<li>
+				<p><img src="images/7.png" alt="" /></p>
+				<span>美容护肤</span>
+			</li>
+			<li>
+				<p><img src="images/8.png" alt="" /></p>
+				<span>成人用品</span>
+			</li>
+		</ul>						
+	</div>
+	<div class="Drugs">
+		<p class="top"><img src="images/d.png" alt="" />全网最低价</p>
+		<div class="product">
+			<li class="big fl">
+				<div>
+					<p>【力魂】灵芝益寿胶囊</p>
+					<font>￥8.99</font>
+					<img src="images/yao.png"/>
+				</div>
+			</li>
+			<ul class="fl">
+				<li class="der">
+					<div>
+						<p>【永安康健】</p>
+						<span>玛咖</span>
+						<font>￥119.00</font>
+					</div>
+				<img src="images/maka.png"/>
+				</li>
+				<li class="bor">
+					<div>
+						<p>【金奥力】</p>
+						<span>蜂蜜胶囊</span>
+						<font>￥138.00</font>
+					</div>
+				<img src="images/pian.png"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Advertisement"><img src="images/tu.png"/></div>
+	<div class="Wine">
+		<p class="top"><img src="images/d.png" alt="" />答谢恩师</p>
+		<div class="product">
+			<li class="big fr">
+				<div>
+					<p>&nbsp;鸿茅药酒（500ml）</p>
+					<font>￥196.00</font>
+					<img src="images/j3.png"/>
+				</div>
+			</li>
+			<ul class="fl">
+				<li class="der">
+					<div>
+						<p>【恒诚】</p>
+						<span>跌打榜药酒</span>
+						<font>￥13.80</font>
+					</div>
+				<img src=" images/j1.png"/>
+				</li>
+				<li class="bor">
+					<div>
+						<p>【万通】</p>
+						<span>颈痛灵药酒</span>
+						<font>￥25.00</font>
+					</div>
+				<img src=" images/j2.png"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Advertisement"><img src="images/tu2.png"/></div>
+	<div class="Maintenance">
+		<p class="top"><img src="images/d.png" alt="" />美美哒</p>
+		<div class="product">
+			<li class="big fl">
+				<div>
+					<p>【姿美堂】胶原蛋白粉</p>
+					<font>￥89.00</font>
+					<img src=" images/q1.png"/>
+				</div>
+			</li>
+			<ul class="fl">
+				<li class="der">
+					<div>
+						<span>新加坡DRC亮白蚕丝精华液</span>
+					</div>
+					<a>精华液</a>
+					<font class="fl">￥15.80</font>
+				<img src="images/q2.png"/>
+				</li>
+				<li class="bor">
+					<div>
+						<p>【爱美得】</p>
+						<span>大眼睫毛膏</span>
+						<font>￥36.00</font>
+					</div>
+				<img src="images/q3.png"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="user">
+		<li class="fl"><a href="#">登陆</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">注册</a></li>
+		<li class="return fr"><a>回首页</a></li>
+	</div>
+	<div class="bottom">
+		<ul>
+			<li>
+				<a href="#">触屏版</a>
+		        <span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		        <a href="#">电脑版</a>
+		        <span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		        <a href="#">APP版</a>
+			</li>
+			<li class="zhong">
+				<ul class="fl">
+					<li><img class="b1" src="images/b1.png" alt="" /><span href="#">正规药店</span></li>
+					<li><img class="b2" src="images/b2.png" alt="" /><span href="#">提供发票</span></li>
+					<li><img class="b3" src="images/b3.png" alt="" /><span href="#">7天退货</span></li>
+				</ul>
+			</li>
+            <p>咨询电话:400-7579-818</p>
+		</ul>
+	</div>
+</body>
+</html>
