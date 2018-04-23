@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<title>无极应用</title>
+	</head>
+	<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 32 + 'px':_html.style.fontSize = view_width / 32 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+</script>
+	<body>
+		<div class="header">
+			<ul>
+				<li><img src="img/2.fw.png" class="t1"/>返回</li>
+				<li class="header_z">无极软件后台管理系统</li>
+				<li><img src="img/1.fw.png"/ class="t2"></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="content_top">
+				<ul>
+				     <li><img src="img/zz.fw.png" class="t"/></li>
+				     <li class="content_z">软件市场</li>
+			    </ul>
+			</div>
+			<dl>
+	            <dd>
+	            	<p>硬件大师</p>
+	            	<ul class="category_1">
+	            		<li class="case_1"><img src="img/3.png" class="t1" /></li>
+	            		<li class="case_3">硬件大师</li>
+	            		<li class="case_4"><span><img src="img/mingpian.fw.png"/>我要开卡</span></li>
+	            		<li class="case_5"><span><img src="img/gouwu.fw.png"/>已开卡密</span></li>
+	            	</ul>
+	            </dd>
+	            <dd> 
+	            	<p>无极</p>
+	            	<ul class="category_2">
+	            		<li class="case_2"><img src="img/4.png" class="t2"/></li>
+	            		<li class="case_3">普通版专业</li>
+	            		<li class="case_4"><span><img src="img/mingpian.fw.png"/>我要开卡</span></li>
+	            		<li class="case_5"><span><img src="img/gouwu.fw.png"/>已开卡密</span></li>
+	            		<li class="case_3">独享版</li>
+	            		<li class="case_4"><span><img src="img/mingpian.fw.png"/>我要开卡</span></li>
+	            		<li class="case_5"><span><img src="img/gouwu.fw.png"/>已开卡密</span></li>
+	            	</ul>
+	            </dd>	            
+	            <dd>
+	            	<p>挂机宝</p>
+	            	<ul class="category_2">
+	            		<li class="case_2"><img src="img/5.png" class="t3"/></li>
+	            		<li class="case_3">随机</li>
+	            		<li class="case_4"><span><img src="img/mingpian.fw.png"/>我要开卡</span></li>
+	            		<li class="case_5"><span><img src="img/gouwu.fw.png"/>已开卡密</span></li>
+	            		<li class="case_3">固定</li>
+	            		<li class="case_4"><span><img src="img/mingpian.fw.png"/>我要开卡</span></li>
+	            		<li class="case_5"><span><img src="img/gouwu.fw.png"/>已开卡密</span></li>
+	            	</ul>
+	            </dd>	           
+	            <dd> 
+	            	<p>变机宝</p>
+	            	<ul class="category_1">
+	            		<li class="case_1"><img src="img/6.png"class="t4" /></li>
+	            		<li class="case_3">变机宝</li>
+	            		<li class="case_4"><span><img src="img/mingpian.fw.png"/>我要开卡</span></li>
+	            		<li class="case_5"><span><img src="img/gouwu.fw.png"/>已开卡密</span></li>
+	            	</ul>
+	            </dd>
+            </dl>
+		</div>
+		<div class="footer">
+			<ul class="menu" id="menu">
+				<li>
+					<img src="img/me.fw.png" class="t11"/>我的
+					<dl class="no">
+				      <dd><img src="img/112.fw.png" class="t4" />账户</dd>
+				      <dd><img src="img/113.fw.png" class="t5" />充值</dd>
+				      <dd><img src="img/114.fw.png" class="t6" />流水</dd>
+				      <dd><img src="img/115.fw.png" class="t7" />密码</dd>
+				      <dd><img src="img/116.fw.png" class="t8" />注销</dd>
+			        </dl>
+				</li>
+				<li><img src="img/che.fw.png" class="t12"/>开卡</li>
+				<li><img src="img/dan.fw.png" class="t13"/>订单</li>
+			</ul>
+		</div>
+		<script>
+		var j = 0;
+		var olis = document.getElementById('menu').getElementsByTagName('li');
+		var odl = document.getElementById('menu').getElementsByTagName('dl');
+		for(var i=0;i<olis.length;i++){
+			olis[i].i=i;
+				olis[i].onclick = function(){
+					j=this.i;
+				if(odl[j].className=='no'){
+					odl[j].className = 'xia';
+				}else{
+					odl[j].className = 'no';
+				}
+				
+		  }
+		}
+	</script>
+	</body>
+</html>
+
