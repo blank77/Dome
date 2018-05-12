@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<style type="text/css">
+			/*全部距离为0*/
+			
+			* {
+				padding: 0;
+				margin: 0;
+				font-family: "宋体";
+			}
+			/*有序去点*/
+			
+			ul li {
+				list-style: none;
+			}
+			/*超链接去下划线*/
+			
+			a {
+				text-decoration: none;
+			}
+			/*清除浮动*/
+			
+			.clerarfix:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			/*公共宽高*/
+			
+			.comWidth {
+				width: 1280px;
+				margin: 0 auto;
+			}
+			
+			.zong {
+				height: 4300px;
+				width: 100%;
+			}
+			/* 头部 */
+			
+			.header {
+				width: 1920px;
+			}
+			
+			.tou {
+				width: 1280px;
+				height: 75px;
+			}
+			
+			.li1 {
+				width: 180px;
+				height: 70px;
+			}
+			
+			.liu2 {
+				width: 155px;
+				height: 20px;
+				margin-left: 1035px;
+				margin-top: -75px;
+			}
+			
+			.liu3 {
+				width: 750px;
+				height: 28px;
+				margin-left: 400px;
+				margin-top: -35px;
+			}
+			
+			.liu3 span {
+				margin-left: 30px;
+			}
+			
+			.liu11 {
+				margin: 0 auto;
+				width: 1920px;
+			}
+			
+			.liu10:hover,
+			.liu4:hover,
+			.liu5:hover,
+			.liu6:hover,
+			.liu7:hover,
+			.liu8:hover,
+			.liu9:hover {
+				color: #E97A4C;
+				padding-bottom: 5px;
+				border-bottom: 2px solid #E97A4C;
+			}
+			/* banner */
+			/* 服务项目 */
+			
+			.body {
+				width: 1920px;
+			}
+			
+			.o {
+				margin-top: 70px;
+			}
+			
+			.shuo2 {
+				font-size: 30px;
+				font-weight: bold;
+				margin-left: 125px;
+			}
+			
+			.shuo3 {
+				width: 15px;
+				height: 5px;
+				border-top: 5px solid blue;
+				margin-left: 170px;
+			}
+			
+			.shuo4 {
+				font-size: 10px;
+				margin-left: 38px;
+			}
+			
+			.shuo1 {
+				margin-left: 765px;
+				margin-top: 50px;
+				width: 390px;
+				height: 90px;
+			}
+			
+			.shuo5 {
+				width: 1360px;
+				height: 285px;
+				background-color: rgba(246, 244, 245, .5);
+				padding-top: 15px;
+			}
+			
+			.shuo6,
+			.shuo10,
+			.shuo11,
+			.shuo12,
+			.shuo13,
+			.shuo14 {
+				width: 193px;
+				height: 250px;
+				background-color: #fff;
+				margin-left: 29px;
+				padding-top: 29px;
+				float: left;
+			}
+			
+			.shuo6 img,
+			.shuo10 img,
+			.shuo11 img,
+			.shuo12 img,
+			.shuo13 img,
+			.shuo14 img {
+				margin-left: 40px;
+				border-radius: 50%;
+			}
+			
+			.shuo7 {
+				width: 72px;
+				height: 22px;
+				margin-top: 60px;
+				margin-left: 60px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			
+			.shuo8 {
+				width: 140px;
+				height: 72px;
+				margin-left: 46px;
+				font-size: 10px;
+				color: rgba(0, 0, 0, .5);
+				color: #BDC4BC;
+			}
+			
+			.shuo6:hover,
+			.shuo10:hover,
+			.shuo11:hover,
+			.shuo12:hover,
+			.shuo13:hover,
+			.shuo14:hover {
+				background-color: #45B3FE;
+				color: #fff;
+			}
+			
+			.shuo6:hover p,
+			.shuo10:hover p,
+			.shuo11:hover p,
+			.shuo12:hover p,
+			.shuo13:hover p,
+			.shuo14:hover p {
+				color: #fff;
+			}
+			
+			.guan {
+				text-align: center;
+				height: 440px;
+				margin-top: 80px;
+			}
+			
+			.zi {
+				font-weight: bold;
+				font-size: 36px;
+				font-family: "微软雅黑";
+			}
+			
+			.bian {
+				display: inline-block;
+				height: 4px;
+				width: 41px;
+				background-color: #45B4FF;
+				margin-bottom: 4px;
+			}
+			
+			.t {
+				font-size: 12px;
+			}
+			
+			.t1 {
+				display: inline-block;
+				padding-bottom: 40px;
+				font-size: 12px
+			}
+			
+			.t li {
+				width: 1200px;
+				text-align: left;
+				line-height: 24px;
+			}
+			
+			.u li {
+				margin-top: 12px;
+				float: left;
+			}
+			
+			.wo {
+				margin-top: 90px;
+				text-align: center;
+				height: 330px;
+			}
+			
+			.k1,
+			.k2,
+			.k3,
+			.k4 {
+				margin-top: 14px;
+				width: 206px;
+				height: 186px;
+				float: left;
+			}
+			
+			.k1 {
+				background-color: #45B3FE;
+				border-radius: 8px;
+			}
+			
+			.k2 {
+				background-color: #FB6226;
+				border-radius: 8px;
+			}
+			
+			.k3 {
+				background-color: #45B3FE;
+				border-radius: 8px;
+			}
+			
+			.k4 {
+				background-color: #45B3FE;
+				border-radius: 8px;
+			}
+			
+			.k2,
+			.k3,
+			.k4 {
+				margin-left: 126px;
+			}
+			
+			.n {
+				color: white;
+			}
+			
+			.n li {
+				text-align: left;
+				font-size: 12px;
+				margin-top: 12px;
+				margin-left: 30px;
+				list-style-type: disc;
+			}
+			
+			.n p {
+				font-size: 24px;
+				font-weight: bold;
+				margin-top: 38px;
+				padding-bottom: 22px;
+			}
+			/*案例导航样式*/
+			
+			.al {
+				height: 1200px;
+			}
+			
+			.b {
+				margin-top: 80px;
+				text-align: center;
+			}
+			
+			.al_nav {
+				width: 120px;
+				margin: 0 auto;
+			}
+			
+			.al_nav a {
+				float: left;
+				display: inline-block;
+				width: 60px;
+				height: 50px;
+				line-height: 50px;
+				color: #000;
+				text-align: center;
+			}
+			
+			.al_nav a:hover {
+				height: 48px;
+				border-bottom: 2px solid #FE6700;
+			}
+			/*案例内容电脑端*/
+			/*父级别盒子*/
+			
+			.al_dn_f {
+				float: left;
+				margin: 64px 66px 142px 0;
+				width: 564px;
+				height: 290px;
+				position: relative;
+			}
+			
+			.al_r {
+				margin: 64px 0 142px 0;
+			}
+			/*子级盒子*/
+			
+			.al_img,
+			.al_img img,
+			.zhezhao {
+				width: 564px;
+				height: 290px;
+				position: absolute;
+				overflow: hidden;
+			}
+			
+			.zhezhao {
+				background: rgba(0, 0, 0, 0.4);
+				z-index: 0;
+				border-radius: 9px;
+			}
+			
+			.al_img {
+				z-index: 1;
+			}
+			/*鼠标浮上*/
+			
+			.al_dn_f:hover .zhezhao {
+				height: 432px;
+				z-index: 2;
+				position: absolute;
+				top: -30px;
+			}
+			
+			.al_dn .al_r:hover {
+				height: 432px;
+				margin: 64px 0 0 0;
+				border-radius: 9px;
+			}
+			
+			.al_dn_f:hover {
+				height: 432px;
+				margin: 64px 66px 0 0;
+			}
+			
+			.zhezhao a {
+				display: inline-block;
+				width: 130px;
+				height: 38px;
+				line-height: 38px;
+				text-decoration: none;
+				color: #fff;
+				text-align: center;
+				background: #45B3FE;
+				border: 1px solid #45B3FE;
+				border-radius: 19px 19px 19px 19px;
+				margin: 350px 0 0 206px;
+			}
+			
+			.jiao {
+				height: 510;
+				width: 1280px;
+			}
+			
+			.3hang {
+				margin: 0 auto;
+			}
+			
+			.j {
+				width: 700px;
+				height: 46px;
+				margin: 0 auto;
+			}
+			
+			.j li {
+				float: left;
+				width: 86px;
+				height: 42px;
+				margin-left: 26px;
+				line-height: 42px;
+				text-align: center;
+			}
+			
+			.j li a {
+				color: #AFAFAF;
+				font-size: 14px;
+			}
+			
+			.j li:hover {
+				border-bottom: 2px solid #FC650C;
+			}
+			
+			.j li:hover a {
+				color: #FC650C;
+			}
+			
+			.wen {
+				margin-top: 55px;
+				height: 320px;
+			}
+			
+			.wen img {
+				float: left;
+			}
+			
+			.wen li {
+				float: left;
+				width: 370px;
+				height: 86px;
+				margin-left: 36px;
+				border: 2px solid #DDDDDD;
+				border-radius: 2px;
+			}
+			
+			.e3,
+			.e4,
+			.e5,
+			.e6 {
+				margin-top: 22px;
+			}
+			
+			.wen li font {
+				float: left;
+				width: 65px;
+				height: 65px;
+				background-color: #969696;
+				text-align: center;
+				margin-top: 12px;
+				margin-left: 18px;
+			}
+			
+			.wen li font p {
+				font-size: 25px;
+				color: #fff;
+				line-height: 41px;
+				font-weight: bold;
+			}
+			
+			.wen li font span {
+				font-size: 12px;
+				color: #fff;
+			}
+			
+			.wen li a {
+				margin-top: 20px;
+				display: inline-block;
+				font-size: 12px;
+				color: #404A3F;
+				width: 240px;
+				height: 14px;
+				margin-left: 20px;
+				font-weight: bold;
+			}
+			
+			.e11 {
+				margin-top: 8px;
+				margin-left: 20px;
+				display: inline-block;
+				font-size: 12px;
+				width: 240px;
+				height: 30px;
+			}
+			
+			.wen li:hover {
+				border: 2px solid #33A3ED;
+				/*background-image: url(+.png)no-repeat;*/
+			}
+			
+			.wen li:hover font {
+				background-color: #33A3ED;
+			}
+			
+			.wen li:hover a {
+				color: #33A3ED;
+			}
+			/*底部*/
+			
+			.d {
+				margin-top: 60px;
+				width: 1920px;
+				height: 310px;
+				background-color: #2C2C2C;
+			}
+			
+			.d1 {
+				height: 210px;
+				border-bottom: 1px solid #313131;
+			}
+			.d1 li {
+				float: left
+			}
+			.d11{
+				margin-top: 30px;
+				height: 120px;
+				margin-left: 20px;
+				width: 302px;
+			}
+			.d12{
+				margin-top: 30px;
+				height: 120px;
+				width: 280px;
+				margin-left: 100px;
+			}
+			.d13{
+				margin-top: 30px;
+				height: 120px;
+				margin-left: 100px;
+				width: 402px;
+			}
+			.d1 li a{
+				color: #848484;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			.d11 a{
+				float: left;
+			}
+			.d11 img{
+				margin-top: 10px;
+				float: left;
+				width: 55px;
+				height: 55px;
+				position: relative;
+				top:30px;
+				right: 64px;
+			}
+			.d12,
+			.d13{
+				text-align: center;
+			}
+			.dd li{
+				margin-left: 20px;
+				margin-top: 24px;
+			}
+			.d13 span{
+				margin-top: 16px;
+				display: inline-block;
+				width: 25%;
+				font-size: 14px;
+				color: #606060;
+			}
+			.z{
+				height: 14px;
+				margin-left: 260px;
+			}
+			.z ul{
+				margin-top: 30px;
+			}
+			.z li{
+				float: left;
+				font-size: 14px;
+				text-align: center;
+			}
+			.z li a{
+				color: #606060;
+			}
+			.x{
+				margin-left: 130px;
+			}
+			.x li{
+				float: left;
+			}
+			.x li{
+				padding-top: 16px;
+				color: #606060;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="zong">
+			<!-- 头部 -->
+			<div class="header">
+				<div class="comWidth">
+					<div class="tou">
+						<div class="liu1"><img src="logo.jpg"></div>
+						<div class="liu3">
+							<span class="liu10">关于我们</span>
+							<span class="liu4">我们优势</span>
+							<span class="liu5">项目服务</span>
+							<span class="liu6">成功案例</span>
+							<span class="liu7">教学文档</span>
+							<span class="liu8">联系我们</span>
+							<span class="liu9">企业官网</span>
+						</div>
+						<div class="liu2"><img src="hua.jpg"></div>
+					</div>
+				</div>
+			</div>
+			<!-- banner -->
+			<div class="liu11"><img src="banner.jpg"></div>
+			<div class="body">
+				<div class="comWidth">
+					<!-- 服务项目 -->
+					<div class="b">
+						<p class="zi o">服务项目</p>
+						<p class="bian"></p>
+						<ul><span class="t1">以客户中心，解决客户互联网需求，成就自我！</span></ul>
+					</div>
+					<div class="shuo5 ">
+						<div class="shuo6">
+							<img src="biao.png">
+							<p class="shuo7">网站制作</p>
+							<p class="shuo8">办公，学习，小程序</p>
+						</div>
+						<div class="shuo10">
+							<img src="biao.png">
+							<p class="shuo7">网站制作</p>
+							<p class="shuo8">办公，学习，小程序</p>
+						</div>
+						<div class="shuo11">
+							<img src="biao.png">
+							<p class="shuo7">网站制作</p>
+							<p class="shuo8">办公，学习，小程序</p>
+						</div>
+						<div class="shuo12">
+							<img src="biao.png">
+							<p class="shuo7">网站制作</p>
+							<p class="shuo8">办公，学习，小程序</p>
+						</div>
+						<div class="shuo13">
+							<img src="biao.png">
+							<p class="shuo7">网站制作</p>
+							<p class="shuo8">办公，学习，小程序</p>
+						</div>
+						<div class="shuo14">
+							<img src="biao.png">
+							<p class="shuo7">网站制作</p>
+							<p class="shuo8">办公，学习，小程序</p>
+						</div>
+					</div>
+					<div class="guan">
+						<p class="zi">关于我们</p>
+						<p class="bian"></p>
+						<ul class="t">
+							<span class="t1">以客户中心，解决客户互联网需求，成就自我！</span>
+							<li>&nbsp;&nbsp;WEB&nbsp;基地，网聚天下商机，成立于2014年，提供域名注册、虚拟主机、企业邮局、网站建设、万战维护、微信公众平台、微信营销等全套网络营销解决方案。WEB&nbsp;基地，从创立至今已经为数千家企业提供了专业的网络营销产品，并通过专业的网络营销服务是这些企业获得了良好的营销效果。</li>
+							<li>&nbsp;&nbsp;WEB&nbsp;基地，网聚天下商机，成立于2014年，提供域名注册、虚拟主机、企业邮局、网站建设、万战维护、微信公众平台、微信营销等全套网络营销解决方案。WEB&nbsp;基地，从创立至今已经为数千家企业提供了专业的网络营销产品，并通过专业的网络营销服务是这些企业获得了良好的营销效果。</li>
+						</ul>
+						<ul class="u">
+							<li><img src="71.png" alt="" /></li>
+							<li><img src="72.png" alt="" /></li>
+							<li><img src="73.png" alt="" /></li>
+							<li><img src="74.png" alt="" /></li>
+						</ul>
+					</div>
+
+					<div class="wo">
+						<p class="zi">我们的优势</p>
+						<p class="bian"></p>
+						<ul><span class="t1">以客户中心，解决客户互联网需求，成就自我！</span></ul>
+						<ul class="k">
+							<li class="k1">
+								<ul class="n">
+									<p>一站式建站</p>
+									<li>送服务器空间</li>
+									<li>送百度收录</li>
+									<li>送域名注册</li>
+								</ul>
+							</li>
+							<li class="k2">
+								<ul class="n">
+									<p>一站式建站</p>
+									<li>送服务器空间</li>
+									<li>送百度收录</li>
+									<li>送域名注册</li>
+								</ul>
+							</li>
+							<li class="k3">
+								<ul class="n">
+									<p>一站式建站</p>
+									<li>送服务器空间</li>
+									<li>送百度收录</li>
+									<li>送域名注册</li>
+								</ul>
+							</li>
+							<li class="k4">
+								<ul class="n">
+									<p>一站式建站</p>
+									<li>送服务器空间</li>
+									<li>送百度收录</li>
+									<li>送域名注册</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="al">
+						<div class="b">
+							<p class="zi">优秀案例</p>
+							<p class="bian"></p>
+							<ul><span class="t1">以客户中心，解决客户互联网需求，成就自我！</span></ul>
+						</div>
+						<div class="al_nav">
+							<p>
+								<a href="#">电脑端</a>
+								<a href="#">手机端</a>
+							</p>
+						</div>
+
+						<ul class="al_dn">
+							<li>
+								<div class="al_dn_f">
+									<div class="al_img">
+										<img src="al_dn_r1_c1.png" />
+									</div>
+
+									<div class="zhezhao">
+										<a href="#">预览效果</a>
+									</div>
+								</div>
+								<div class="al_dn_f al_r">
+									<div class="al_img">
+										<img src="al_dn_r1_c2.png" />
+									</div>
+									<div class="zhezhao">
+										<a href="#">预览效果</a>
+									</div>
+								</div>
+								<span class="clear"></span>
+							</li>
+							<li>
+								<div class="al_dn_f">
+									<div class="al_img">
+										<img src="al_dn_r2_c1.png" />
+									</div>
+									<div class="zhezhao">
+										<a href="#">预览效果</a>
+									</div>
+								</div>
+								<div class="al_dn_f al_r">
+									<div class="al_img">
+										<img src="al_dn_r2_c2.png" />
+									</div>
+									<div class="zhezhao">
+										<a href="#">预览效果</a>
+									</div>
+								</div>
+								<span class="clear"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="jiao">
+						<div class="b">
+							<p class="zi">教学档案</p>
+							<p class="bian"></p>
+							<ul><span class="t1">以客户中心，解决客户互联网需求，成就自我！</span></ul>
+						</div>
+						<div class="3hang">
+							<ul class="j">
+								<li>
+									<a href="#">网站建设</a>
+								</li>
+								<li>
+									<a href="#">网站建设</a>
+								</li>
+								<li>
+									<a href="#">网站建设</a>
+								</li>
+								<li>
+									<a href="#">网站建设</a>
+								</li>
+								<li>
+									<a href="#">网站建设</a>
+								</li>
+								<li>
+									<a href="#">网站建设</a>
+								</li>
+							</ul>
+						</div>
+						<div class="4kuai comWidth">
+							<ul class="wen">
+								<img src="80.png" alt="" />
+								<li class="e1">
+									<font>
+										<p>20</p>
+										<span>2018-2</span>
+									</font>
+									<a href="#">网站建设中几个可以被借鉴的通用型原则</a>
+									<span class="e11">虽然现在每一个公司，企业都要建设自己的专属网站，而且都已经开始注重网站建设了，不</span>
+								</li>
+								<li class="e2">
+									<font>
+										<p>20</p>
+										<span>2018-2</span>
+									</font>
+									<a href="#">网站建设中几个可以被借鉴的通用型原则</a>
+									<span class="e11">虽然现在每一个公司，企业都要建设自己的专属网站，而且都已经开始注重网站建设了，不</span>
+								</li>
+								<li class="e3">
+									<font>
+										<p>20</p>
+										<span>2018-2</span>
+									</font>
+									<a href="#">网站建设中几个可以被借鉴的通用型原则</a>
+									<span class="e11">虽然现在每一个公司，企业都要建设自己的专属网站，而且都已经开始注重网站建设了，不</span>
+								</li>
+								<li class="e4">
+									<font>
+										<p>20</p>
+										<span>2018-2</span>
+									</font>
+									<a href="#">网站建设中几个可以被借鉴的通用型原则</a>
+									<span class="e11">虽然现在每一个公司，企业都要建设自己的专属网站，而且都已经开始注重网站建设了，不</span>
+								</li>
+								<li class="e5">
+									<font>
+										<p>20</p>
+										<span>2018-2</span>
+									</font>
+									<a href="#">网站建设中几个可以被借鉴的通用型原则</a>
+									<span class="e11">虽然现在每一个公司，企业都要建设自己的专属网站，而且都已经开始注重网站建设了，不</span>
+								</li>
+								<li class="e6">
+									<font>
+										<p>20</p>
+										<span>2018-2</span>
+									</font>
+									<a href="#">网站建设中几个可以被借鉴的通用型原则</a>
+									<span class="e11">虽然现在每一个公司，企业都要建设自己的专属网站，而且都已经开始注重网站建设了，不</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="d">
+				<div class="comWidth">
+					<ul class="d1">
+						<li class="d11">
+							<a href="#">关注我们</a>
+							<img src="81.png" alt="" />
+						</li>
+						<li class="d12">
+							<a href="#">合作伙伴</a>
+							<ul class="dd">
+								<li><img src="82.png" alt="" /></li>
+								<li><img src="82.png" alt="" /></li>
+								<li><img src="82.png" alt="" /></li>
+								<li><img src="82.png" alt="" /></li>
+								<li><img src="82.png" alt="" /></li>
+								<li><img src="82.png" alt="" /></li>
+							</ul>
+						</li>
+						<li class="d13">
+							<p><a href="#">友情链接</a></p>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+							<span>网站建设</span>
+						</li>
+					</ul>
+					<div class="zuidi">
+					<div class="z">
+						<ul class="">
+											<li>
+												<a href="#">关于凡科&nbsp</a>
+											</li>
+											<li>
+												<a href="#">帮助中心&nbsp</a>
+											</li>
+											<li>
+												<a href="#">服务条款&nbsp</a>
+											</li>
+											<li>
+												<a href="#">法律声明&nbsp</a>
+											</li>
+											<li>
+												<a href="#">企业网站&nbsp</a>
+											</li>
+											<li>
+												<a href="#">省市建站&nbsp</a>
+											</li>
+											<li>
+												<a href="#">自助建站&nbsp</a>
+											</li>
+											<li>
+												<a href="#">网站建设&nbsp</a>
+											</li>
+											<li>
+												<a href="#">网站模版&nbsp</a>
+											</li>
+						</ul>
+					</div>
+					<ul class="x">
+						<li class="x1">
+							粤公网安备 44010502000715号 | Copyright @ 2010-2018 广州凡科互联网股份有限公司 粤ICP备10235580号 股票代码：832828
+						</li>
+				        <img src="84.png">
+					</ul>
+			</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
