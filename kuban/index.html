@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>酷伴首页</title>
+	</head>
+	<style type="text/css">
+		    /*全部距离为0*/
+		   *{
+		   	padding: 0;
+		   	margin: 0;
+		   	font-family: "宋体";
+		   }
+		   /*有序去点*/
+		   ul li{
+		   	list-style: none;
+		   }
+		   li{
+		   	list-style: none;
+		   }
+		   /*超链接去下划线*/
+		   a{
+		   	text-decoration: none;
+		   }
+		   /*清除浮动*/
+		   .clerarfix:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			/*公共宽高*/
+		   .comWidth{
+		   	width: 980px;
+		   	margin: 0 auto;
+		   }
+		   .ke{
+		   	float: right;
+		   	height: 48px;
+		   	width: 163px;
+		   	background: #C00000;
+		   	border-radius:25px 0px 0px 25px ;
+		   	cursor: pointer;
+		   	position: fixed;
+		   	left: 1356px;
+		   	top:150px
+		   }
+		   .ke img{
+		   	float: left;
+		   	margin-top: 11px;
+		   	margin-left: 13px;
+		   }
+		   .ke span{
+		   	float: left;
+		   	margin-left: 22px;
+		   	margin-top: 15px;
+		   	color: #FFFFFF;
+		   }
+		   /*整体*/
+		   .zong{
+		   	width: 1680px;
+		   	height: 2330px;
+		   	background: url(img/g_r1_c3.gif);
+		   	margin: 0 auto;
+		   }
+		   /*头部开始*/
+		   .header{
+		   	height: 131px;
+		   	width: 1680px;
+		   	background: #F7F7F7;
+		   }
+		   .top{
+		   	background: #272727;
+		   }
+		   /*导航开始*/
+		   .nav{
+		   	height: 86px;
+		   }
+		   .nav h1 img{
+		   	height: 52px;
+		   	width: 94px;
+		   	margin-top: 15px;
+		   	float: left;
+		   	
+		   }
+		   .nav b{
+		   	font-size: 20px;
+		   	float: left;
+		   	font-weight: bold;
+		   	margin-left: 100px;
+		   	margin-top: 60px;
+		   	color: #B18239;
+		   }
+		   .nav ul{
+		   display: inline-block;
+		   }    
+		   .nav ul li{
+		   	height: 56px;
+		   	width: 88px;
+		   	float: left;
+		   	font-weight: bold;
+		   	text-align: center;
+		   	padding-top: 29px;
+		   }
+		   .nav ul li a{
+		   	font-size: 14px;
+		   	color: white;
+		   }
+		   .nav ul li a p{
+		   	font-size: 11px;
+		   	color: #B5B5B5;
+		   	margin-top: 10px;
+		   }
+		   /*导航结束*/
+		   .top ul li:hover{
+		   	background: #DE2121;
+		   }
+		   .top ul li:hover p{
+		   	color: white;
+		   } 
+		   .bottom img{
+		   	float: left;
+		   	margin-top: 10px;
+		   }
+		   .bottom p{
+		   	font-size: 18px;
+		   	width: 121px;
+		   	float: left;
+		   	margin-top: 12px;
+		   	margin-left: 6px;
+		   	color: #B2B2B2;
+		   }
+		   #zhu{
+		   	width: 50px;
+		   	height: 25px;
+		   	font-size: 12px;
+		   	background: #ED3540;
+		   	color: white;
+		   	border: 1px solid #B61313;
+		   }
+		   #deng{
+		   	width: 50px;
+		   	height: 25px;
+		   	font-size: 12px;
+		   	color: #616161;
+		   	border: 1px solid #BEBEBE;
+		   	margin-right: 2px;
+		   }
+		   #zhu,#deng{
+		   	float: right;
+		   	margin-top: 10px;
+		   	cursor: pointer;
+		   }
+		   /*头部结束*/
+		  /*内容开始*/
+		   .kuang{
+		   	margin-top: -3px;
+		   	width: 980px;
+		   	height: 185px;
+		   	background: #FFFFFF;
+		   	border-bottom: 1px solid#E5E5E5;
+		   }
+		   .z1{
+		   	float: left;
+		   	height: 147px;
+		   	width: 232px;
+		   	background-image: url(img/g_r9_c2.gif) ;
+		   	margin-left: 13px;
+		   	margin-top: 14px;
+		   }
+		   .z1 .p1{
+		   	font-size: 20px;
+		   	font-weight: bold;
+		   	margin-left: 40px;
+		   	margin-top: 17px;
+		   	color: #DE2121;
+		   }
+		   .p2{
+		   	margin-top: 17px;
+		   }
+		   .p2,.p3,.p4,.p5{
+		   	font-size: 12px;
+		   	margin-left: 40px;
+		   } 
+		   .z2{
+		   	float: left;
+		   	height: 147px;
+		   	width: 232px;
+		   	background-image: url(img/g_r2_c3.gif) ;
+		   	margin-left: 12px;
+		   	margin-top: 13px;
+		   }
+		   .z2 .p6{
+		   	font-size: 20px;
+		   	font-weight: bold;
+		   	margin-left: 40px;
+		   	margin-top: 17px;
+		   	color: #555555;
+		   }  
+		   .p7{
+		   	width: 176px;
+		   	font-size: 12px;
+		   	margin-left: 40px;
+		   	margin-top: 17px;
+		   }
+		   .z3{
+		   	float: left;
+		   	height: 147px;
+		   	width: 232px;
+		   	background-image: url(img/g_r2_c4.gif) ;
+		   	margin-left: 12px;
+		   	margin-top: 13px;
+		   }
+		   .z3 .p8{
+		   	font-size: 20px;
+		   	font-weight: bold;
+		   	margin-left: 40px;
+		   	margin-top: 17px;
+		   	color: #555555;
+		   }  
+		   .p9{
+		   	width: 176px;
+		   	font-size: 12px;
+		   	margin-left: 40px;
+		   	margin-top: 17px;
+		   }
+		   .z4{
+		   	float: left;
+		   	height: 147px;
+		   	width: 232px;
+		   	background-image: url(img/g_r2_c6.gif) ;
+		   	margin-left: 12px;
+		   	margin-top: 13px;
+		   }
+		   .z4 .p10{
+		   	font-size: 20px;
+		   	font-weight: bold;
+		   	margin-left: 40px;
+		   	margin-top: 17px;
+		   	color: #555555;
+		   }  
+		   .p11{
+		   	width: 176px;
+		   	font-size: 12px;
+		   	margin-left: 40px;
+		   	margin-top: 17px;
+		   }
+		   .conter{
+		   	width: 980px;
+		   	height: 1415px;
+		   	background: #FFFFFF;
+		   } 
+		   /*第一部分开始*/
+		   .n1{
+		   	float: left;
+		   	width: 610px;
+		   	height: 651px;
+		   	margin-left: 25px;
+		   	margin-top: 27px;
+		   	border: 1px solid #CFCFCF;
+		   }
+		   .top1{
+		   	height: 40px;
+		   	width: 610px;
+		   	background: #FAFAFA;
+		   	border-bottom: 1px solid #CFCFCF;
+		   }
+		   .top1 ul li{
+		   	float: left;
+		   	height: 40px;
+		   	width: 100px;
+		   }
+		   .top1 ul li a{
+		   	line-height: 36px;
+		   	float: left;
+		   	text-align: center;
+		   	height: 36px;
+		   	width: 85px;
+		   	color: #181818;
+		   	margin-top: 2px;
+		   	margin-left: 6px;
+		   	margin-right: 6px;
+		   }
+		   .s{
+		   	border-top: 2px solid #969696;
+		   }
+		   .s1{
+		   	border-top: 2px solid #FD5900;
+		   }
+		   .s2{
+		   	border-top: 2px solid #0074CD;
+		   }
+		   .s3{
+		   	border-top: 2px solid #C00000;
+		   }
+		   .s4{
+		   	border-top: 2px solid #40AA00;
+		   }
+		   .s5{
+		   	border-top: 2px solid #383838;
+		   }
+		   .l{
+		    font-weight: bold;
+		   }
+		   .top1 ul li:hover{
+		   	background:#FFFFFF;
+		    border-bottom:1px solid #FFFFFF;
+		   	font-weight: bold;
+		   }
+		   .bottom11{
+		   	width: 610px;
+		   	height: 98px;
+		   }
+		   .bottom11 h1{
+		   	float: left;
+		   	margin-left: 12px;
+		   	margin-top: 20px;
+		   }
+		   .bottom11 ul{
+		   	width: 500px;
+		   	height: 70px;
+		   	float: left;
+		   	margin-left: 14px;
+		   	margin-top: 26px;
+		   	border-bottom: 1px dashed #ACACAC;
+		   }
+		   .bottom11 ul li{
+		 
+		   	font-size: 12px;
+		   	color: #515050;
+		   }
+		   .t1{
+		   	font-weight: bold;
+		   }
+		   .t1 a{
+		   	font-weight: normal;
+		   	color: #ACACAC;
+		   	margin-left: 14px;
+		   }
+		   .t2{
+		   	width: 74px;
+		   	height: 22px;
+		   	margin-top: 6px;
+		   }
+		   .t3{
+		   	margin-left: 434px;
+		   	margin-top: -35px;
+		   }
+		   .t3 input{
+		   	width: 59px;
+		   	height: 29px;
+		   	background: #FDFDFD;
+		   	border: 1px solid #ACACAC;
+		    cursor: pointer;
+		   }
+		   .t4{
+		   	height: 13px;
+		   	width: 400px;
+		   	margin-top: 10px;
+		   }
+		   .t4 font{
+		   	color: #ACACAC;
+		   }
+		   .t4 span{
+		   	font-size: 14px;
+		   	color: #C00000;
+		   }
+		   .foot{
+		   	width: 610px;
+		   	height: 98px;
+		   }
+		   .foot h1{
+		   	float: left;
+		   	margin-left: 12px;
+		   	margin-top: 20px;
+		   }
+		   .foot ul{
+		   	width: 500px;
+		   	height: 70px;
+		   	float: left;
+		   	margin-left: 14px;
+		   	margin-top: 26px;
+		   }
+		   .foot ul li{
+		   	font-size: 12px;
+		   	color: #515050;
+		   }
+		   /*第一部分结束*/
+		  /*第二部分开始*/
+		   .n2{
+		   	float: right;
+		   	width: 305px;
+		   	height: 627px;
+		   	margin-right: 11px;
+		   	margin-left: 25px;
+		   	margin-top: 27px;
+		   	border: 1px solid #CFCFCF;
+		   }
+		   .top2{
+		   	height: 41px;
+		   	width: 305px;
+		   	background: #FAFAFA;
+		   	border-bottom: 1px solid #CFCFCF;
+		   }
+		   .top2 ul li{
+		   	float: left;
+		   	height: 41px;
+		   	width: 152px;
+		   	line-height: 41px;
+		   	text-align: center;
+		   	color: #181818;
+		   }
+		   .top2 ul li:hover{
+		   	background:#FFFFFF;
+		    border-bottom:1px solid #FFFFFF;
+		   	font-weight: bold;
+		   }
+		   .bottom12{
+		   	width: 304px;
+		   	height: 84px;
+		   }
+		   .bottom12 h1{
+		   	float: left;
+		   	margin-left: 12px;
+		   	margin-top: 7px;
+		   } 
+		   .bottom12 ul{
+		   	width: 205px;
+		   	height: 84px;
+		   	float: left;
+		   	margin-left: 8px;
+		   }
+		   .bottom12 ul li{
+		   	font-size: 14px;
+		   	color: #515050;
+		   }
+		   .v1{
+		   	 font-weight: bold;
+		   }
+		   .v1 input{
+		   	position: relative;
+		   	left: 65px;
+		   	top: 17px;
+		   	color: #FFFFFF;
+		   	background: #21D311;
+		   	width: 56px;
+		   	height: 25px;
+		   	border-radius: 5px 5px 5px 5px;
+		   	border: 1px solid #08B520;
+		   	cursor: pointer;
+		   }
+		   .v2{
+		   	margin-top: 7px;
+		   }
+		   .v2 a{
+		   	color: #ACACAC;
+		   }
+		   .v3{
+		   	margin-top: 12px;
+		   }
+		   .v3 span{
+		   	font-weight: bold;
+		   }
+		   .m1{
+		   	background: #F2F2F2;
+		   }
+		   /*第二部分结束*/
+		   .xia{
+		   	float: right;
+		   	margin-right: 11px;
+		   	height: 24px;
+		   	width: 305px;
+		   	background: #F9F9F9;
+		   	border: 1px solid #CFCFCF;
+		   	border-top: none;
+		   }
+		   .i1{
+		   	margin-left: 70px;
+		   	float: left;
+		   }
+		   .xia span{
+		   	margin-left: 70px;
+		   	line-height: 24px;
+		   	color: #CFCFCF;
+		   	float: left;
+		   }
+		   .i2{
+		   	margin-left: 70px;
+		   	float: left;
+		   }
+		   .i2 img{
+		   	transform: rotate(180deg);
+		   }
+		   /*第三部分开始*/
+		  .tiao1{
+		  	float: left;
+		  	height: 31px;
+		  	width: 612px;
+		  	margin-top: 24px;
+		  	margin-left: 24px;
+		  	background: #343434;
+		  	line-height: 31px;
+		  }
+		  .tiao1 ul li{
+		  	float: left;
+		  }
+		  .she1{
+		  	font-weight: bold;
+		  	text-align: center;
+		  	width: 74px;
+		  	height: 31px;
+		  	color: #FFFFFF;
+		  	font-size: 13px;
+		  	background: #DA0B0B;
+		  	}
+		  .tiao1 ul li span{
+		  	font-size: 13px;
+		  	color: #BBBBBB;
+		  	margin-left: 5px;
+		  }	
+		  .tiao1 ul li a{
+		  	font-size: 12px;
+		  	color: #FFFFFF;
+		  	margin-left: 381px;
+		  }
+		  .n3{
+		  	float: left;
+		  	width: 612px;
+		  	height: 420px;
+		  	margin-left: 24px;
+		  	background: #EFEFEF;
+		  }
+		  .sh{
+		  	float: left;
+		  	width: 579px;
+		  	height: 182px;
+		  	margin-left: 10px;
+		  	margin-top: 10px;
+		  }
+		  .sh h1{
+		  	float: left;
+		  }
+		  .sh input{
+		  	margin-top: 60px;
+		  	margin-left: -56px;
+		   	color: #FFFFFF;
+		   	float: left;
+		   	background: #21D311;
+		   	width: 56px;
+		   	height: 25px;
+		   	border-radius: 5px 5px 5px 5px;
+		   	border: 1px solid #08B520;
+		   	cursor: pointer;
+		   }
+		   .nei{
+		   	float: right;
+		   	width: 513px;
+		   	height: 182px;
+		   	background-image: url(img/9.gif);
+		   }
+		   .nei ul li{
+		   	float: left;
+		   }
+		   .g1{
+		   	font-size: 12px;
+		   	font-weight: bold;
+		   	margin-top: 23px;
+		   	margin-left: 30px;
+		   }
+		   .g1 a{
+		   	height: 15px;
+		   	width: 38px;
+		   	margin-left: 2px;
+		   }
+		   .g2{
+		   	font-size: 12px;
+		   	color: #ABABAB;
+		   	margin-left: 283px;
+		   	margin-top: 23px;
+		   }
+		   .g2 span{
+		   	float: left;
+		   	width: 60px;
+		   	height: 19px;
+		   	line-height: 19px;
+		   }
+		   .g2 img{
+		   	float: left;
+		   	width: 17px;
+		   	height: 19px;
+		   	margin-right: 2px;
+		   }
+		   .g3{
+		   	height: 53px;
+		   	width: 474px;
+		   	font-size: 12px;
+		   	margin-top: 24px;
+		   	margin-left: 30px;
+		   }
+		   .g4{
+		   	width: 312px;
+		   	height: 30px;
+		   	margin-left: 30px;
+		   	font-size: 12px;
+		   	margin-top: 21px;
+		   	line-height: 30px;
+		   	background: #F3F3F3;
+		   	border-radius: 5px 5px 5px 5px;
+		   }
+		   .g4 span{
+		   	margin-left: 13px;
+		   }
+		   .g5{
+		   	font-size: 12px;
+		   	color: #ABABAB;
+		   	margin-left: 46px;
+		   	margin-top: 25px;
+		   }
+		   /*第三部分结束*/
+		   /*第四部分开始*/
+		  .tiao2{
+		  	float: right;
+		  	margin-right: 11px;
+		  	margin-top: -31px;
+		  	height: 31px;
+		  	width: 306px;
+		  	background: #343434;
+		  	line-height: 31px;
+		  }
+		   .tiao2 ul li{
+		  	float: left;
+		  }
+		  .she3{
+		  	font-weight: bold;
+		  	text-align: center;
+		  	width: 74px;
+		  	height: 31px;
+		  	color: #FFFFFF;
+		  	font-size: 13px;
+		  	background: #DA0B0B;
+		  	}
+		  .tiao2 ul li span{
+		  	font-size: 13px;
+		  	color: #BBBBBB;
+		  	margin-left: 5px;
+		  }	
+		  .n4{
+		  	width: 306px;
+		  	height: 420px;
+		  	background: #EFEFEF;
+		  	float: right;
+		  	margin-right: 11px;
+		  }
+		  .n4 ul li{
+		  	float: left;
+		  	font-size: 13px;
+		  	margin-top: 23px;
+		  	margin-left: 35px;
+		  	width: 56px;
+		  	cursor: pointer;
+		  }
+		  .n4 ul li span{
+		  	margin-top: 14px;
+		  }
+		  /*第四部分结束*/
+		  /*第五部分开始*/
+		  .n5{
+		  	float: left;
+		  	width: 610px;
+		  	height: 189px;
+		  	margin-top: 24px;
+		  	margin-left: 24px;
+		  	border: 1px solid #CFCFCF;
+		  }
+		  .o1{
+		  	margin: 0 auto;
+		  	height: 36px;
+		   	width: 584px;
+		   	line-height: 36px;
+		   	border-bottom: 1px solid #CFCFCF;
+		   }
+		   .zo1{
+		   	font-size: 12px;
+		   	font-weight: bold;
+		   }   
+		   .zo2{
+		   	font-size: 13px;
+		   	color:#929191;
+		   	margin-left: 10px;
+		   }
+		   .o2{
+		   	font-size: 12px;
+		   }
+		   .o2 img{
+		   	float: left;
+		   	margin-left: 26px;
+		   	margin-top: 29px;
+		   }
+		   .o2 ul{
+		   	float: left;
+		   	width: 332px;
+		   	height: 95px;
+		   	margin-top: 29px;
+		   	margin-left: 20px;
+		   }
+		   .o2 ul li{
+		   	float: left;
+		   }
+		   .qo1{
+		   	font-weight: bold;
+		   	padding-right: 200px;
+		   	padding-bottom: 20px;
+		   }
+		   .qo2{
+		   	padding-right: 28px;
+		   	padding-bottom: 10px;
+		   }
+		   .qo3{
+		   	padding-bottom: 10px;
+		   }
+		   .qo4{
+		   	padding-bottom: 10px;
+		   }
+		   /*第五部分结束*/
+		   /*第六部分开始*/
+		   .n6{
+		   	width: 306px;
+		   	float: right;
+		   	margin-right: 11px;
+		   	margin-top: 24px;
+		   }
+		   .n6 ul{
+		   	float: left;
+		   	width: 306px;
+		   	height: 61px;
+		   	background: #2A2A2A;
+		   }
+		   .n6 ul li{
+		   	float: left;
+		   	color: #FFFFFF;
+		   	line-height: 61px;
+		   }
+		   .uo1{
+		   	margin-top: 11px;
+		   	margin-left: 13px;
+		   	padding-right: 18px;
+		   }
+		   .uo2{
+		   	font-size: 20px;
+		   	padding-right: 80px;
+		   }
+		   .uo3{
+		   	font-size: 12px;
+		   }
+		   .uo4{
+		   	padding-right: 40px;
+		   }
+		   .u1{
+		   margin-bottom: 4px;
+		   }
+		   .u2{
+		   margin-bottom: 4px;
+		   }
+		   /*第六部分结束*/
+		   /*内容结束*/
+		   /*底部开始*/
+		  .footer{
+	       width:1680px;
+	       height:198px;
+	       background:#272727;
+           }
+           .center1 {
+	       padding-top:20px;
+	       float:left;
+           }
+           .center1 li{
+	       float:left;
+	       height:148px;
+	       width:170px;
+	       line-height:24px;
+	       font-size:12px;
+	       border-left:1px solid #4D4D4D;
+	       padding:0px 0 0 10px;
+           }
+           .center1 a{
+	       color:#ccc;
+	       text-decoration:none;
+           }
+           .center1 dt{
+	       color:#fff;
+	       font-size:14px;
+           }
+
+           .center2{
+	       color:#ccc;
+	       font-size:12px;
+	       text-align:right;
+	       float:right;
+	       padding-top:20px;
+	       line-height:24px;
+           }
+	</style>
+	<body>
+	<div class="zong clerarfix">
+		<div class="header">
+			<div class="top">
+				<div class="nav comWidth">
+						<h1><img src="img/logo.gif"/></h1>
+						<b>
+							学口语，找酷伴！
+						</b>
+						<ul>
+							<li><a href="#">首页<p>home</p></a></li>
+							<li><a href="#">首页<p>home</p></a></li>
+							<li><a href="#">首页<p>home</p></a></li>
+							<li><a href="#">首页<p>home</p></a></li>
+							<li><a href="#">首页<p>home</p></a></li>
+							<li><a href="#">首页<p>home</p></a></li>
+							<li><a href="#">首页<p>home</p></a></li>
+						</ul>
+					</div>
+			</div>
+			<div class="bottom comWidth">
+				<h1><img src="img/g_r2_c2.gif"/></h1>
+				<p>021-5406-9939</p>
+				<input type="submit" name="zhu" id="zhu" value="注册" />
+				<input type="submit" name="" id="deng" value="登陆" />
+			</div>
+		</div>
+		<div class="comWidth">
+			<div class="banner">
+				<img src="img/g_r4_c2.gif" alt="" />
+			</div>
+		</div>
+		<div class="ke"><img src="img/h.gif"/><span>在线客服</span></div>
+		<div class="comWidth">
+		<ul class="kuang">
+			<li class="z1">
+				<p class="p1">酷伴优势</p>
+				<p class="p2">·咖啡厅互动式教学，随时随地</p>
+				<p class="p3">·咖啡厅互动式教学，随时随地</p>
+				<p class="p4">·咖啡厅互动式教学，随时随地</p>
+				<p class="p5">·咖啡厅互动式教学，随时随地</p>
+			</li>
+			<li class="z2">
+				<p class="p6">基础英语</p>
+				<p class="p7">
+			  掌控各类话题的探讨，了解西方各国文化
+				，提升自己的英语熟练度，开放自己的眼界，
+			  学习更多的沟通模式。 </p>
+			</li>
+			<li class="z3">
+				<p class="p8">生活英语</p>
+				<p class="p9">
+					提升学英语的兴趣，并建立合适有效的学习方法，
+				 学习英语不只注重于笔头功夫，更注重于口头的训练。
+				</p>
+			</li>
+			<li class="z4">
+				<p class="p10">商务英语</p>
+				<p class="p11">
+					提升学英语的兴趣，并建立合适有效的学习方法，
+				 学习英语不只注重于笔头功夫，更注重于口头的训练。
+				</p>
+			</li>
+		</ul>
+       </div>
+       <div class="conter comWidth">
+       	<div class="n1">
+       		<div class="left1">
+       			<div class="top1">
+       				<ul>
+       					<li class="l"><a href="#" class="s">最新课程</a></li>
+       					<li><a href="#" class="s1">最新课程</a></li>
+       					<li><a href="#" class="s2">最新课程</a></li>
+       					<li><a href="#" class="s3">最新课程</a></li>
+       					<li><a href="#" class="s4">最新课程</a></li>
+       					<li><a href="#" class="s5">最新课程</a></li>
+       				</ul>
+       			</div>
+       			<div class="bottom1">
+       				<div class="bottom11">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="t1">Maxgmenke<a href="#">来自 America</a></li>
+       				       					<li class="t2"><img src="img/4.gif"/></li>
+       				       					<li class="t3"><input type="submit" name="" id="" value="订课" /></li>
+       				       					<li class="t4">7月2日(周一)  <font>|</font> 人民广场老城咖啡  <font>|</font>  上课时间18:45  <font>|</font>  空位：<span>6</span> 位</li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom11">
+       					<h1><img src="img/3.gif"/></h1>
+       					<ul>
+       				       					<li class="t1">Maxgmenke<a href="#">来自 America</a></li>
+       				       					<li class="t2"><img src="img/4.gif"/></li>
+       				       					<li class="t3"><input type="submit" name="" id="" value="订课" /></li>
+       				       					<li class="t4">7月2日(周一)  <font>|</font> 人民广场老城咖啡  <font>|</font>  上课时间18:45  <font>|</font>  空位：<span>6</span> 位</li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom11">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="t1">Maxgmenke<a href="#">来自 America</a></li>
+       				       					<li class="t2"><img src="img/4.gif"/></li>
+       				       					<li class="t3"><input type="submit" name="" id="" value="订课" /></li>
+       				       					<li class="t4">7月2日(周一)  <font>|</font> 人民广场老城咖啡  <font>|</font>  上课时间18:45  <font>|</font>  空位：<span>6</span> 位</li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom11">
+       					<h1><img src="img/3.gif"/></h1>
+       					<ul>
+       				       					<li class="t1">Maxgmenke<a href="#">来自 America</a></li>
+       				       					<li class="t2"><img src="img/4.gif"/></li>
+       				       					<li class="t3"><input type="submit" name="" id="" value="订课" /></li>
+       				       					<li class="t4">7月2日(周一)  <font>|</font> 人民广场老城咖啡  <font>|</font>  上课时间18:45  <font>|</font>  空位：<span>6</span> 位</li>
+       				       				</ul>
+       				</div><div class="bottom11">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="t1">Maxgmenke<a href="#">来自 America</a></li>
+       				       					<li class="t2"><img src="img/4.gif"/></li>
+       				       					<li class="t3"><input type="submit" name="" id="" value="订课" /></li>
+       				       					<li class="t4">7月2日(周一)  <font>|</font> 人民广场老城咖啡  <font>|</font>  上课时间18:45  <font>|</font>  空位：<span>6</span> 位</li>
+       				       				</ul>
+       				</div>
+       				<div class="foot">
+       					<h1><img src="img/3.gif"/></h1>
+       					<ul>
+       				       					<li class="t1">Maxgmenke<a href="#">来自 America</a></li>
+       				       					<li class="t2"><img src="img/4.gif"/></li>
+       				       					<li class="t3"><input type="submit" name="" id="" value="订课" /></li>
+       				       					<li class="t4">7月2日(周一)  <font>|</font> 人民广场老城咖啡  <font>|</font>  上课时间18:45  <font>|</font>  空位：<span>6</span> 位</li>
+       				       				</ul>
+       				</div>
+       			</div>
+       		</div>
+       	</div>
+       	<div class="n2">
+       				<div class="top2">
+       					<ul>
+       				       					<li>外教</li>
+       				       					<li>中教</li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom12">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="v1">Maxgmenke<input type="submit" name="" id="" value="加关注" /></li>
+       				       					<li class="v2"><a href="#">来自 America</a></li>
+       				       					<li class="v3">学员<span>15</span>粉丝<span>6</span></li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom12 m1">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="v1">Maxgmenke<input type="submit" name="" id="" value="加关注" /></li>
+       				       					<li class="v2"><a href="#">来自 America</a></li>
+       				       					<li class="v3">学员<span>15</span>粉丝<span>6</span></li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom12">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="v1">Maxgmenke<input type="submit" name="" id="" value="加关注" /></li>
+       				       					<li class="v2"><a href="#">来自 America</a></li>
+       				       					<li class="v3">学员<span>15</span>粉丝<span>6</span></li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom12 m1">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="v1">Maxgmenke<input type="submit" name="" id="" value="加关注" /></li>
+       				       					<li class="v2"><a href="#">来自 America</a></li>
+       				       					<li class="v3">学员<span>15</span>粉丝<span>6</span></li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom12">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="v1">Maxgmenke<input type="submit" name="" id="" value="加关注" /></li>
+       				       					<li class="v2"><a href="#">来自 America</a></li>
+       				       					<li class="v3">学员<span>15</span>粉丝<span>6</span></li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom12 m1">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="v1">Maxgmenke<input type="submit" name="" id="" value="加关注" /></li>
+       				       					<li class="v2"><a href="#">来自 America</a></li>
+       				       					<li class="v3">学员<span>15</span>粉丝<span>6</span></li>
+       				       				</ul>
+       				</div>
+       				<div class="bottom12">
+       					<h1><img src="img/3.gif"/></h1>
+       				       				<ul>
+       				       					<li class="v1">Maxgmenke<input type="submit" name="" id="" value="加关注" /></li>
+       				       					<li class="v2"><a href="#">来自 America</a></li>
+       				       					<li class="v3">学员<span>15</span>粉丝<span>6</span></li>
+       				       				</ul>
+       				</div>
+       			</div>
+       			<div class="xia">
+       					<li class="i1"><img src="img/5.gif"/></li><span>|</span><li class="i2"><img src="img/6.gif"/></li>
+       			</div>
+       			<div class="tiao1">
+       				<ul>
+       					<li class="she1">社区动态</li>
+       					<li class="she2"><span>Community</span><a href="#">进入社区 ></a></li>
+       				</ul>
+       			</div>
+       			<div class="n3">
+       				<div class="sh">
+       					<h1><img src="img/8.gif"/></h1>
+       					<input type="submit" name="" id="" value="加关注" />
+       					<div class="nei">
+       						<ul>
+       							<li class="g1"><span>zhaiyanli</span><a href="#"><img src="img/7.gif"/></a></li>
+       							<li class="g2"><img src="img/10.gif"/><span>今天 18:00</span></li>
+       							<li class="g3">“This weekend, I worked on a new code experiment - a multi-touch enabled semi-random polygon drawing tool. It creates polygon shapes that look sort of like endlessly unfolding paper. You can draw with your mouse or fingers.”</li>
+       							<li class="g4"><span>(近期课程 2012-05-25   基础英语(南京东路上岛咖啡))</span></li>
+       							<li class="g5">转发(5)<span>|</span>评论(2)</li>
+       						</ul>
+       					</div>
+       				</div>
+       				<div class="sh">
+       					<h1><img src="img/8.gif"/></h1>
+       					<input type="submit" name="" id="" value="加关注" />
+       					<div class="nei">
+       						<ul>
+       							<li class="g1"><span>zhaiyanli</span><a href="#"><img src="img/7.gif"/></a></li>
+       							<li class="g2"><img src="img/10.gif"/><span>今天 18:00</span></li>
+       							<li class="g3">“This weekend, I worked on a new code experiment - a multi-touch enabled semi-random polygon drawing tool. It creates polygon shapes that look sort of like endlessly unfolding paper. You can draw with your mouse or fingers.”</li>
+       							<li class="g4"><span>(近期课程 2012-05-25   基础英语(南京东路上岛咖啡))</span></li>
+       							<li class="g5">转发(5)<span>|</span>评论(2)</li>
+       						</ul>
+       					</div>
+       				</div>
+       			</div>
+       			<div class="tiao2">
+       				<ul>
+       					<li class="she3">社区动态</li>
+       					<li class="she4"><span>Students</span></li>
+       				</ul>
+       			</div>
+       			<div class="n4">
+       			<ul>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       			</ul>
+       			<ul>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       			</ul>
+       			<ul>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       			</ul>
+       			<ul>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       				<li><img src="img/11.gif"/>christian</li>
+       			</ul>
+       			</div>
+       			<div class="n5">
+       				<div class="o1">
+								<span class="zo1" >酷伴体验中心</span><span  class="zo2" >Experience Center of Shanghai</span>
+							</div>
+							<div class="o2">
+								<h1><img src="img/12.gif" /></h1>
+								<ul>
+									<li class="qo1">徐家汇体验中心</li>
+									<li class="qo2">电话：021-54069939</li>
+									<li class="qo3">工作时间： 每天 10:00-20:00</li>
+									<li class="qo4">上海市 徐汇区 零陵路899号 飞洲国际 25楼 E </li>
+									<li>交通：地铁上海体育馆站零陵路出口</li>
+								</ul>							
+							</div>
+       			</div>
+       			<div class="n6">
+       				<ul class="u1">
+       					<li class="uo1"><img src="img/k1.gif"/></li>
+       					<li class="uo2">背单词捐大米</li>
+       					<li class="uo3">></li>
+       				</ul>
+       				<ul class="u2">
+       					<li class="uo1"><img src="img/k2.gif"/></li>
+       					<li class="uo2">酷伴官方微博</li>
+       					<li class="uo3">></li>
+       				</ul>
+       				<ul>
+       					<li class="uo1"><img src="img/k3.gif"/></li>
+       					<li class="uo4">Tutors RegisterLogin</li>
+       					<li class="uo3">></li>
+       				</ul>
+       			</div>
+       </div>
+	<div class="footer">
+		<div class="comWidth">
+			<ul class="center1">
+				<li>
+					<dl>          
+						<dt><a href="#">关于酷伴</a></dt>
+						<dd><a href="#">酷伴理念</a></dd>
+						<dd><a href="#">企业文化</a></dd>
+						<dd><a href="#">酷伴博客</a></dd>
+						<dd><a href="#">投资者</a></dd>
+						<dd><a href="#">加入酷伴</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>     
+						<dt><a href="#">酷伴产品</a></dt>
+						<dd><a href="#">酷伴课程</a></dd>
+						<dd><a href="#">教学方法</a></dd>
+						<dd><a href="#">师资教材</a></dd>
+						<dd><a href="#">酷伴社区</a></dd>
+						<dd><a href="#">质量保证</a></dd>
+					</dl>
+				</li>     
+				<li>
+					<dl>     
+						<dt><a href="#">客户服务</a></dt>
+						<dd><a href="#">课程预订</a></dd>
+						<dd><a href="#">退课条款</a></dd>
+						<dd><a href="#">投诉建议</a></dd>
+						<dd><a href="#">账号删除</a></dd>
+						<dd><a href="#">对话COO</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>        
+						<dt><a href="#">商务合作</a></dt>
+						<dd><a href="#">合作商户</a></dd>
+						<dd><a href="#">友情链接</a></dd>
+						<dd><a href="#">合作提案</a></dd>
+					</dl>
+				</li>
+			</ul>
+			<ul class="center2">
+				<li>版权所有上海酷伴文化传播有限公司<li>
+				<li> 沪ICP备09030028号<li>
+				<li><img src="img/gongshang.gif" /><li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	</body>
+</html>
