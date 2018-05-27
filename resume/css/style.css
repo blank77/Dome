@@ -1,0 +1,402 @@
+@charset "utf-8";
+body{
+	height: 100vh;
+	overflow: hidden;
+}
+/*头部开始*/
+.header{
+	width: 100%;
+	padding: 10px 3% 0 3%;
+	position: fixed;
+	z-index: 10;
+}
+.header a img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+/*头部结束*/
+/*内容开始*/
+.conter{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.Button{
+	position: absolute;
+	top: 30%;
+	right: 40px;
+}
+.Button li{
+	line-height: 24px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin: 12px auto;
+}
+.Button li a{
+	display: block;
+	position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: rgba(0,0,0,.7);
+    transition: all .3s ease;
+    border-radius: 50%;
+    opacity: .1;
+    cursor: pointer;
+    z-index: 5;
+}
+.Button img{
+	width: 60%;
+	width: 60%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-47%) translateX(47%);
+    transition: all .3s ease;
+    z-index: -1;
+    pointer-events: none;
+}
+.introduce{
+	position: absolute;
+	top: 30%;
+	right: 80px;
+}
+.introduce dd{
+	margin: 12px 0;
+	text-align: center;
+	width: 50px;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	background: rgba(0,0,0,.6);
+	font-size: 12px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	z-index: 5;
+	opacity: 0;
+}
+.introduce dd::after{
+	position: absolute;
+	left: 55px;
+	top: 0;
+	content: ' ';
+	display: block;
+	z-index: 6;
+	border-left: 12px solid rgba(0,0,0,.6);
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+.active{
+	opacity: 1 !important;
+}
+.in{
+	transform: translateY(-50%) scale(3) !important;
+    opacity: 1 !important;
+}
+.into{
+	animation: to 1s;
+	display: block !important;
+}
+.do{
+	animation: to 1s;
+}
+@keyframes to{
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(-100%);
+	}
+}
+.conter_{
+	display: block;
+	width: 100%;
+	height:500%;
+	position: relative;
+}
+/*首页*/
+.information{
+	display: block;
+	width: 100%;
+	height: 20%;
+	background: url(../img/bg.png)  #87b0a5;
+	position: relative;
+}
+.i_conter{
+	width: 100%;
+	position: absolute;
+	top: 120px;
+	left: 0;
+}
+.i_conter p{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 7px 0;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+}
+.photo{
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: url(../img/1.png) no-repeat;
+	transition: box-shadow .5s linear;
+}
+.photo:hover{
+	box-shadow: 0 0 15px #1FAEFF;
+	transition: box-shadow .5s linear;
+}
+.Motto{
+	margin: 0 auto;
+	height: 40px;
+	width: 75%;
+	padding: 30px 0 60px 0;
+	
+}
+.Motto p{
+	border-bottom: 1px solid #FFFFFF;
+	font-size: 20px;
+}
+/*关于我*/
+.my{
+	display: block;
+	width: 100%;
+	height: 20%;
+	background: url(../img/bg.png)  #109085;
+	position: relative;
+}
+.m_conter{
+	width: 100%;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	text-align: center;
+}
+.m_conter h2{
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.m_conter ul{
+	width: 75%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 45px 0 0 0;
+}
+.m_conter ul li{
+	display: inline-block;
+	padding: 0 55px;
+}
+
+.m_conter ul li img{
+	width: 46px;
+	padding: 27px;
+	cursor: pointer;
+}
+.m_conter ul li p{
+	padding-top: 30px;
+}
+.img{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: rgba(255,255,255,.1);
+	transition: transform ease-out .1s,background .2s,transform ease-out .1s;
+}
+.img:hover{
+	background: rgba(255,255,255,.05);
+    transform: scale(.93);
+}
+.m_conter p{
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.p_top{
+	padding-top: 80px;
+}
+.img:hover::after {
+    -webkit-animation: effect 1.3s ease-out 75ms;
+    animation: effect 1.3s ease-out 75ms;
+}
+.img::after {
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.1);
+    opacity: 0;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 0;
+    z-index: 9;
+}
+@keyframes effect {
+ 0% {
+  opacity:.3
+ }
+ 40% {
+  opacity:.5;
+  box-shadow:0 0 0 2px rgba(255,255,255,.1),0 0 10px 10px #109085,0 0 0 10px rgba(255,255,255,.5)
+ }
+ 100% {
+  box-shadow:0 0 0 2px rgba(255,255,255,.1),0 0 10px 10px #109085,0 0 0 10px rgba(255,255,255,.5);
+  -webkit-transform:scale(1.5);
+  transform:scale(1.5);
+  opacity:0
+ }
+}
+/*技能栈*/
+.skill{
+	display: block;
+	width: 100%;
+	height: 20%;
+	background: url(../img/bg.png)  #4d5e8f;
+	position: relative;
+}
+.s_conter{
+	width: 100%;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	text-align: center;
+}
+.s_conter h2{
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.s_conter dl{
+	width: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 45px 0 0 0;
+}
+.s_conter dl dd ul li{
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	color: #FFFFFF;
+	width: 13%;
+	height: 40px;
+	float: left;
+	margin: 0 10px 10px 10px;
+	border-radius: 4px;
+}
+.on{
+	background: #DAA520;
+}
+/*作品集*/
+.works{
+	display: block;
+	width: 100%;
+	height: 20%;
+	background: url(../img/bg.png)  #4b85a0;
+	position: relative;
+}
+.w_conter{
+	width: 100%;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	text-align: center;
+}
+.w_conter h2{
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.w_conter ul{
+	width: 90%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 45px 0 0 0;
+}
+.w_conter ul li{
+	text-align: left;
+	float: left;
+	width: 45%;
+	margin-top: 40px;
+	margin-right: 4%;
+	height: 190px;
+	box-shadow: 0 0 10px rgba(0,0,0,.6);
+	background-color: #fff;
+    border-radius: 4px;
+    padding: 20px 0 0 10px;
+}
+.w_conter ul li a{
+	color: #4985a0;
+    font-size: 18px;
+}
+/*联系我*/
+.contact{
+	width: 100%;
+	display: block;
+	height:20%;
+	background: url(../img/bg.png)  #a29971;
+	position: relative;
+}
+.c_conter{
+	width: 100%;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	text-align: center;
+}
+.c_conter h2{
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.c_conter dl{
+	width: 90%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 45px 0 0 0;
+}
+.c_conter dl span{
+	display: inline-block;
+	margin:0 20px 0 20px;
+	font-size: 20px;
+    font-weight: 700;
+}
+.c_conter dl dd{
+	font-size: 16px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+.c1{
+	color: #ff0000;
+}
+.c2{
+	color: #3cf;
+}
+.c3{
+	color: #6c0;
+}
+.c4{
+	color: #f63;
+}
+.c_conter ul{
+	width: 90%;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 200px;
+	cursor: pointer;
+}
+.c_conter ul li{
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.c_conter ul li img{
+	width: 26px;
+}
+/*内容结束*/
